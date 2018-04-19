@@ -17,21 +17,21 @@ V1.1.0
 
 * **接口简单全面**：实现播放接口简单，可快速实现播放。提供播放器状态监听接口以及错误信息通知接口、日志接口、算法参数配置接口等。
 
-* **解码性能强大**：支持H264、H265、AAC，支持4K视频硬件解码以及2K以下视频软件解码
+* **解码性能强大**：支持H264、H265、AAC，支持4K视频硬件解码以及2K以下视频软件解码。
 
-* **多平台**：支持ARMV7、ARM64和X86平台
+* **多平台**：支持ARMV7、ARM64和X86平台。
 
 ## 开发环境
-Android studio
+Android Studio
 
 ## 导入工程
 ### 1. 开发准备
-下载最新的demo和sdk
+下载最新的Demo和SDK
 
 ### 2. 导入工程
 ##### 2.1 导入aar包
 将aar包放到工程libs目录下，如图
-![](https://github.com/vrviu-sdk/VRVIU-AltPlayer-Demo-Android)
+![](https://github.com/vrviu-sdk/VRVIU-AltPlayer-Demo-Android/blob/master/Image/libpath.png)
 
 
 修改build.gradle文件，确保添加
