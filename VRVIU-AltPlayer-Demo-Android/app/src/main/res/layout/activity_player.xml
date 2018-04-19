@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+    <com.viu.player.AltVideoView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+    <!--<SurfaceView-->
+        <!--android:id="@+id/surfaceView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+    <RelativeLayout
+        android:id="@+id/control_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:background="@color/black"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/play_btn"
+            android:text="playing"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_below="@id/play_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/play_position_tv"
+            android:text="00:00"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_below="@id/play_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/duration_tv"
+            android:text="00:00"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"/>
+        <SeekBar
+            android:layout_below="@id/play_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/duration_tv"
+            android:layout_toRightOf="@id/play_position_tv"
+            android:id="@+id/seekBar"
+            android:max="100"
+            android:layout_marginBottom="10dp"
+            android:secondaryProgress="0"
+            android:progress="0"
+            android:indeterminate="false" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_pb"
+        android:indeterminateDrawable="@drawable/progressbar_circle"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:maxWidth="60dp"
+        android:maxHeight="60dp"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:indeterminateDuration="1200"
+        android:layout_height="50dp"
+        android:visibility="gone"/>
+    <!--<TextView android:id="@+id/audio_position"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="20sp"-->
+        <!--android:paddingLeft="4dp"-->
+        <!--android:paddingRight="4dp"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:includeFontPadding="false"-->
+        <!--android:textColor="#FF3030"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/change_hls_button2"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="50dip"-->
+        <!--android:text="视角左"-->
+        <!--android:visibility="gone" />-->
+
+</FrameLayout>
+
