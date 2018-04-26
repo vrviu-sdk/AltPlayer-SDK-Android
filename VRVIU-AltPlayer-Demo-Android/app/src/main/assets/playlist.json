@@ -3,8 +3,8 @@
     "name": "LIVE VIDEO",
     "samples": [
       {
-        "name": "http://120.77.152.95:1936/vrviu_alt_demo.flv",
-        "uri": "http://120.77.152.95:1936/vrviu_alt_demo.flv"
+        "name": "http://120.77.204.104:38666/20000.flv",
+        "uri": "http://120.77.204.104:38666/20000.flv"
       }
     ]
   }
