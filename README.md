@@ -9,7 +9,9 @@ V1.2
 支持点播以及直播功能，其中直播是网络主播实时推送的视频流，用户能够及时看到主播的画面。点播是播放云端或者本地的文件。
 
 ## 产品特点
-* **播放器格式支持**：可以支持常见视频格式播放，也可以播放使用威尔云 [**FE算法**](https://www.vrviu.com/technology.html) 编码后的视频。经测试，FE编码在同样清晰度的前提下能够进一步节省最高40%的码率。
+* **高效的视频编码算法**：针对网络主播视频特点设计出独特的[**FE编码算法**](https://www.vrviu.com/technology.html)。经测试， FE编码算法在同等清晰度的前提下能够节省40%的传输带宽。
+
+* **播放器格式支持**：可以支持常见视频格式播放，也可以播放使用威尔云编码后的视频。
 
 * **直播视频秒开**：通过优化播放器缓冲策略、网络加载等，该SDK可以实现秒开。
 
@@ -83,6 +85,10 @@ dependencies {
 
 ```java
 videoView = (AltVideoView)findViewById(R.id.surfaceView);
+mAppId = "vrviu_altsdk";
+mAccessKey = "87ab4019c7f624c0310b5c52f1c76419";
+mAccessKeyId = "c832b744e6983a8df217f8af27f1395f";
+mBizId = "altsdk_demo";
 videoView.init(mAppid,mAccessKey,mAccessKeyId,mBizId);
 videoView.setUrl(uriString);
 videoView.start();
