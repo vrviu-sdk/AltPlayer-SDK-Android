@@ -24,6 +24,12 @@ V1.2
 ## 开发环境
 Android Studio
 
+## 快速体验威尔云 [FE算法](https://www.vrviu.com/technology.html) 
+* 下载最新的github代码后，编译安装。
+* 推送一路RTMP流至 rtmp://120.77.204.104:38667/live/vrviu_altsdk, 建议规格：分辨率720P，15FPS, H.264@1.2Mbps / H.265@1Mbps。
+* 在安装好的APP的Input URL中填写：http://120.77.204.104:38666/20000.flv, 即可播放视频。720P码率仅需 H.264@650Kbps, H.265@600Kbps。
+
+
 ## 导入工程
 ### 1. 开发准备
 下载最新的Demo和SDK
