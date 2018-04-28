@@ -29,10 +29,10 @@ Android Studio
 ## 快速体验威尔云 [FE算法](https://www.vrviu.com/technology.html) 
 * 下载最新的github代码后，编译安装。
 
-* 推送一路RTMP流至 rtmp://rs1-pu.vrviu.com:38667/live/vrviu_altsdk, 建议规格：分辨率720P，15FPS, H.264 1.2Mbps 或 H.265 1Mbps。
+* 推送一路RTMP流至 rtmp://rs1-pu.vrviu.com:38667/live/vrviu_altsdk，建议规格：分辨率720P，15FPS, H.264 1.2Mbps 或 H.265 1Mbps。
 
 * 在安装好的APP的Input URL中填写 http://rs1-pl.vrviu.com/live/vrviu_altsdk.flv?auth_key=1540277586-0-0-becf2e8ef7e862620b469c573e420a25
-, 即可播放威尔云FE算法视频。720P码率仅需 H.264 650Kbps 或 H.265 600Kbps。
+，即可播放威尔云FE算法视频。720P码率仅需 H.264 650Kbps 或 H.265 600Kbps。
 
 
 ## 导入工程
