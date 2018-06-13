@@ -3,8 +3,8 @@
     "name": "LIVE VIDEO",
     "samples": [
       {
-        "name": "http://120.77.152.95:1936/vrviu_alt_demo.flv",
-        "uri": "http://120.77.152.95:1936/vrviu_alt_demo.flv"
+        "name": "http://rs1-pl.vrviu.com/live/vrviu_altsdk.flv?auth_key=1540277586-0-0-becf2e8ef7e862620b469c573e420a25",
+        "uri": "http://rs1-pl.vrviu.com/live/vrviu_altsdk.flv?auth_key=1540277586-0-0-becf2e8ef7e862620b469c573e420a25"
       }
     ]
   }
