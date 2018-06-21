@@ -6,7 +6,8 @@
 20180428 V1.2  支持普通视频的“高清低带宽”点播/直播播放功能；
 
 ## 功能说明
-支持点播以及直播功能。其中直播是网络主播实时推送的视频流，用户能够及时看到主播的画面。点播是播放云端或者本地的文件。 针对网络主播视频特点设计出独特的[**FE编码算法**](https://www.vrviu.com/technology.html)，经测试，在同等清晰度的前提下能够节省40%的传输带宽。  
+ 支持点播以及直播功能。其中直播是网络主播实时推送的视频流，用户能够及时看到主播的画面。点播是播放云端或者本地的文件。  
+ 针对网络主播视频特点设计出独特的[**FE编码**](https://www.vrviu.com/technology.html)算法，经测试，在同等清晰度的前提下能够节省40%的传输带宽。  
 
 ## 产品特点
 **1. 播放器格式支持**：  
@@ -26,12 +27,12 @@
 
 **8. 多平台**：支持ARMV7、ARM64和X86平台
 
-## 快速体验[VRVIU-FE算法](https://www.vrviu.com/technology.html) 
-* 下载最新的github代码后，编译安装。
+## 快速体验  
+— 下载最新的github代码后，编译安装。  
 
-* 推送一路RTMP流至 rtmp://rs1-pu.vrviu.com:38667/live/vrviu_altsdk，建议规格：分辨率720P，15FPS, H.264 1.2Mbps 或 H.265 1Mbps。
+— 推送一路RTMP流至 rtmp://rs1-pu.vrviu.com:38667/live/vrviu_altsdk，建议规格：分辨率720P，15FPS, H.264 1.2Mbps 或 H.265 1Mbps。
 
-* 在安装好的APP的Input URL中填写 http://rs1-pl.vrviu.com/live/vrviu_altsdk.flv?auth_key=1540277586-0-0-becf2e8ef7e862620b469c573e420a25
+— 在安装好的APP的Input URL中填写 http://rs1-pl.vrviu.com/live/vrviu_altsdk.flv?auth_key=1540277586-0-0-becf2e8ef7e862620b469c573e420a25
 ，即可播放威尔云FE算法视频。720P码率仅需 H.264 650Kbps 或 H.265 600Kbps。
 
 ## 开发环境
