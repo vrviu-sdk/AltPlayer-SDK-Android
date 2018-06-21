@@ -3,30 +3,30 @@
 [![](https://img.shields.io/badge/Powered%20by-vrviu.com-brightgreen.svg)](https://vrviu.com)
 
 ## 版本
-V1.2
+20180428 V1.2  支持普通视频的“高清低带宽”点播/直播播放功能；
 
 ## 功能说明
-支持点播以及直播功能，其中直播是网络主播实时推送的视频流，用户能够及时看到主播的画面。点播是播放云端或者本地的文件。
+支持点播以及直播功能。其中直播是网络主播实时推送的视频流，用户能够及时看到主播的画面。点播是播放云端或者本地的文件。 针对网络主播视频特点设计出独特的[**FE编码算法**](https://www.vrviu.com/technology.html)，经测试，在同等清晰度的前提下能够节省40%的传输带宽。  
 
 ## 产品特点
-* **高效的视频编码算法**：针对网络主播视频特点设计出独特的[**FE编码算法**](https://www.vrviu.com/technology.html)。经测试， FE编码算法在同等清晰度的前提下能够节省40%的传输带宽。
+**1. 播放器格式支持**：  
+ 可以支持常见视频格式播放，也可以播放使用威尔云编码后的视频。威尔云是威尔视觉的高清视频云服务，能够提供普通视频的[**FE编码**](https://www.vrviu.com/technology.html)服务。  
 
-* **播放器格式支持**：可以支持常见视频格式播放，也可以播放使用威尔云编码后的视频。
+**2. 音视频编码**：H.264, H.265, AAC 
 
-* **直播视频秒开**：通过优化播放器缓冲策略、网络加载等，该SDK可以实现秒开。
+**3. 多协议支持**：支持HLS/RTMP/HTTP-FLV/HTTP-MP4等常见标准协议
 
-* **多协议支持**：支持HLS/RTMP/HTTP-FLV/HTTP-MP4等常见标准协议，以及本地文件的播放。
+**4. 直播视频秒开**：通过优化播放器缓冲策略、网络加载等，实现秒开
 
-* **接口简单全面**：实现播放接口简单，可快速实现播放。提供播放器状态监听接口以及错误信息通知接口、日志接口、算法参数配置接口等。
+**5. 多协议支持**：支持HLS/RTMP/HTTP-FLV/HTTP-MP4等常见标准协议
 
-* **解码性能强大**：支持H264、H265、AAC，支持4K视频硬件解码以及2K以下视频软件解码。
+**6. 接口简单全面**：实现播放接口简单，可快速实现播放。提供播放器状态监听接口以及错误信息通知接口、日志接口、算法参数配置接口等。
 
-* **多平台**：支持ARMV7、ARM64和X86平台。
+**7. 解码性能强大**：支持4K视频硬件解码以及2K以下视频软件解码
 
-## 开发环境
-Android Studio
+**8. 多平台**：支持ARMV7、ARM64和X86平台
 
-## 快速体验威尔云 [FE算法](https://www.vrviu.com/technology.html) 
+## 快速体验[VRVIU-FE算法](https://www.vrviu.com/technology.html) 
 * 下载最新的github代码后，编译安装。
 
 * 推送一路RTMP流至 rtmp://rs1-pu.vrviu.com:38667/live/vrviu_altsdk，建议规格：分辨率720P，15FPS, H.264 1.2Mbps 或 H.265 1Mbps。
@@ -34,6 +34,8 @@ Android Studio
 * 在安装好的APP的Input URL中填写 http://rs1-pl.vrviu.com/live/vrviu_altsdk.flv?auth_key=1540277586-0-0-becf2e8ef7e862620b469c573e420a25
 ，即可播放威尔云FE算法视频。720P码率仅需 H.264 650Kbps 或 H.265 600Kbps。
 
+## 开发环境
+Android Studio
 
 ## 导入工程
 ### 1. 开发准备
@@ -160,8 +162,7 @@ videoView.release();
  |BizId|分配给用户的ID，可通过 www.vrviu.com 填写表单或者联系客服申请|必填|String|
  |AccessKey|分配给用户的ID，可通过 www.vrviu.com 填写表单或者联系客服申请|必填|String
 
-## 商务合作
-电话：0755-86960615
-
-邮箱：business@vrviu.com
+## 联系我们
+ 如果有技术问题咨询，请加入官方QQ群：136562408；   
+ 商务合作请电话：0755-86960615；邮箱：business@vrviu.com；或者至[官网](http://www.vrviu.com)"联系我们" 。    
 
